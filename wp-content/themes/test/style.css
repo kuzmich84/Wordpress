@@ -1,7 +1,19 @@
 /*
 Theme Name: Test
-Theme URI: https://wordpress.org/themes/twentyseventeen/
+Theme URI: https://wordpress.org/themes/test/
 Author: Dmitry Kuchukov
 Author URI: https://wp1.loc/
 Description: Моя первая тестовая тема курса WebForMySelf.
 */
+
+h1 {
+
+    color:red;
+
+}
+
+
+.card {
+    margin-bottom: 30px;
+
+}

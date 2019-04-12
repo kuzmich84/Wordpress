@@ -1,15 +1,31 @@
 <?php get_header(); ?>
 
-<h1>Hello, world!</h1>
+<div class="conteiner">
+    <div class="row">
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+            <!-- post -->
+        <div class="col-md-12">
+            <div class="card" >
+                <img src="..." class="card-img-top" alt="картинка">
+                <div class="card-body">
+                    <h5 class="card-title"><?php the_title()?></h5>
+                    <p class="card-text"></p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-    <!-- post -->
-    <h4><?php the_title(); ?></h4>
-<?php endwhile; ?>
-    <!-- post navigation -->
-<?php else: ?>
-    <!-- no posts found -->
-    <p>Постов нет...</p>
-<?php endif; ?>
+
+        </div>
+
+        <?php endwhile; ?>
+            <!-- post navigation -->
+        <?php else: ?>
+            <!-- no posts found -->
+            <p>Постов нет...</p>
+        <?php endif; ?>
+    </div>
+</div>
+
+
 
 <?php get_footer(); ?>
