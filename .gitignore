@@ -1,9 +1,0 @@
-.idea
-out
-*.iml
-log
-wp-admin
-wp-includes
-.htaccess
-wp-config.php
-
